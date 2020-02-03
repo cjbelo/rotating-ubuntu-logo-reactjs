@@ -1,0 +1,124 @@
+.app {
+  --color: #e95420;
+  --size: 200px;
+  --pos: calc(50% - (var(--size) / 2));
+  --isize: calc(var(--size) / 1.8);
+  --ipos: calc(50% - (var(--isize) / 2));
+  --animspeed: 6s;
+
+  position: relative;
+  height: 100%;
+
+  .logo {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--color);
+    border-radius: 50%;
+    left: var(--pos);
+    top: var(--pos);
+
+    .inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: var(--isize);
+      height: var(--isize);
+      left: var(--ipos);
+      top: var(--ipos);
+      background-color: white;
+      border-radius: 50%;
+
+      div {
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        left: 50%;
+        top: 47%;
+
+        &:first-child {
+          position: relative;
+          width: calc(var(--isize) / 1.5);
+          height: calc(var(--isize) / 1.5);
+          background-color: var(--color);
+          border-radius: 50%;
+          left: unset;
+          top: unset;
+        }
+
+        span {
+          position: absolute;
+          width: 50%;
+          height: 6%;
+          background-color: var(--color);
+          transform-origin: left center;
+
+          &:nth-child(1) {
+            transform: rotate(0deg);
+          }
+          &:nth-child(2) {
+            transform: rotate(-120deg);
+          }
+          &:nth-child(3) {
+            transform: rotate(-240deg);
+          }
+        }
+      }
+    }
+
+    .small {
+      position: absolute;
+      width: var(--isize);
+      height: var(--isize);
+      left: var(--ipos);
+      top: var(--ipos);
+
+      span {
+        position: absolute;
+        width: calc(var(--isize) / 5);
+        height: calc(var(--isize) / 5);
+        background-color: white;
+        border-radius: 50%;
+        border: solid calc(var(--isize) / 18) var(--color);
+
+        &:nth-child(1) {
+          left: 67%;
+          top: -15%;
+        }
+        &:nth-child(2) {
+          left: 67%;
+          bottom: -15%;
+        }
+        &:nth-child(3) {
+          left: -24%;
+          top: 35%;
+        }
+      }
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .spin {
+    animation: spin var(--animspeed) linear infinite;
+  }
+
+  @keyframes reversespin {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .reversespin {
+    animation: reversespin var(--animspeed) linear infinite;
+  }
+}
