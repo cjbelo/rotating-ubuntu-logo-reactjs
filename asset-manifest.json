@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rotating-ubuntu-logo-reactjs/static/css/main.b362ce11.chunk.css",
+    "main.js": "/rotating-ubuntu-logo-reactjs/static/js/main.b4f6c433.chunk.js",
+    "main.js.map": "/rotating-ubuntu-logo-reactjs/static/js/main.b4f6c433.chunk.js.map",
+    "runtime-main.js": "/rotating-ubuntu-logo-reactjs/static/js/runtime-main.99aaeb50.js",
+    "runtime-main.js.map": "/rotating-ubuntu-logo-reactjs/static/js/runtime-main.99aaeb50.js.map",
+    "static/js/2.149320c5.chunk.js": "/rotating-ubuntu-logo-reactjs/static/js/2.149320c5.chunk.js",
+    "static/js/2.149320c5.chunk.js.map": "/rotating-ubuntu-logo-reactjs/static/js/2.149320c5.chunk.js.map",
+    "index.html": "/rotating-ubuntu-logo-reactjs/index.html",
+    "precache-manifest.6faf8e4d2b152d8b4a1ba5724dbeba03.js": "/rotating-ubuntu-logo-reactjs/precache-manifest.6faf8e4d2b152d8b4a1ba5724dbeba03.js",
+    "service-worker.js": "/rotating-ubuntu-logo-reactjs/service-worker.js",
+    "static/css/main.b362ce11.chunk.css.map": "/rotating-ubuntu-logo-reactjs/static/css/main.b362ce11.chunk.css.map",
+    "static/js/2.149320c5.chunk.js.LICENSE.txt": "/rotating-ubuntu-logo-reactjs/static/js/2.149320c5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99aaeb50.js",
+    "static/js/2.149320c5.chunk.js",
+    "static/css/main.b362ce11.chunk.css",
+    "static/js/main.b4f6c433.chunk.js"
+  ]
+}
